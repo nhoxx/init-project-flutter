@@ -125,6 +125,10 @@ class AppStyles {
       fontFamily: AppFonts.visbyMedium);
   static const accentMediumS16 = TextStyle(
       color: AppColors.accent1, fontSize: 16, fontFamily: AppFonts.visbyMedium);
+  static const appColorSemiS16 = TextStyle(
+      color: AppColors.appColors,
+      fontSize: 16,
+      fontFamily: AppFonts.visbySemiBold);
   static const blueMediumS16 = TextStyle(
       color: Colors.blue, fontSize: 16, fontFamily: AppFonts.visbyMedium);
   static const primaryMediumS16 = TextStyle(
@@ -143,6 +147,11 @@ class AppStyles {
     color: AppColors.primary,
     fontSize: 18,
     fontFamily: AppFonts.visbyBold,
+  );
+  static const blackMediumS16 = TextStyle(
+    color: Colors.black,
+    fontSize: 16,
+    fontFamily: AppFonts.visbyMedium,
   );
   static const blackMediumS18 = TextStyle(
     color: Colors.black,

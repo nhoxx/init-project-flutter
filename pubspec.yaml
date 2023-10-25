@@ -44,6 +44,10 @@ dependencies:
   dio: ^5.3.3
   flutter_easyloading: ^3.0.5
   localization: ^2.1.0
+  flutter_remix: ^0.0.3
+  reactive_forms: ^16.1.1
+  email_validator: ^2.1.17
+  build_runner: ^2.4.6
 
 dev_dependencies:
   flutter_test:

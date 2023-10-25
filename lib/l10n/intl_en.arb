@@ -1,3 +1,41 @@
 {
-  "common__api_error" : "There is something wrong"
+  "common__api_error" : "There is something wrong",
+  "common__app_name": "Championing Pet Care",
+  "common__show": "Show",
+  "common__name": "Name",
+  "common__password": "Password",
+  "common__email": "Email",
+
+  "msg001": "Are you sure to cancel Check in?",
+  "msg002": "This field is required.",
+  "msg003": "Are you sure to cancel? The information will not be saved.",
+  "msg004": "Your checked-in timer is expired. \nDo you need to Check In again?",
+  "msg005": "Are you sure to cancel Safety Tracker?",
+  "msg006": "You have reached your destination. Do you still require Safety Tracker?",
+  "msg007": "Are you now safe or do you require assistance?",
+  "msg008": "Are you sure to log out of the current account?",
+  "msg009": "Are you sure to remove %s?",
+  "msg010": "Are you sure to remove %s from your relationships?",
+  "msg012": "Check your email! \nWe sent you an email with instructions for resetting your password.",
+  "msg013": "The email format is not correct.",
+  "msg014": "This email has existed in the system.",
+  "msg015": "The email has not existed.",
+  "msg016": "The confirmation password is wrong.",
+  
+  "wellcome__app_wellcome": "Welcome, Pet Owner!",
+  "wellcome__create_account": "Create Account",
+  "wellcome__existing_member":  "Existing Member?",
+  "wellcome__login_here":  "Login Here",
+
+  "sign_up__policy":"I would like to receive your newsletter and other promotional information.",
+  "sign_up__sign_up":"Sign Up",
+  "signup__firstname": "First Name",
+  "signup__lastname": "Last Name",
+  "signup__emailaddress": "Email Address",
+  "signup__password": "Password",
+  "signup__confirmpassword": "Confirm password",
+  "signup__password_invalid": "Must be between 8 and 20 characters, contain both upper and lower case, at least 1 number and 1 special character",
+
+  "sign_in__log_in":"Log In",
+  "sign_in__forgot_your_password":"Forgot your password?"
 }

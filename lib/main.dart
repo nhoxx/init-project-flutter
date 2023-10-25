@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pets_analytics/configs/providers.dart';
 import 'package:pets_analytics/routes/route_config.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() async {
-  runApp(const MyApp());
+  final container = await appProviderContainer();
+  runApp(
+    UncontrolledProviderScope(
+      container: container,
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {

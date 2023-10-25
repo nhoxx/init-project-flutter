@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pets_analytics/features/authentication/presentation/screens/wellcome_screen.dart';
+import 'package:pets_analytics/features/authentication/presentation/screens/app_demo_screen.dart';
 import 'package:pets_analytics/features/authentication/routes/auth_routes.dart';
 
 class RouteConfig {
@@ -12,16 +12,10 @@ class RouteConfig {
 
   static GoRouter router(BuildContext context) {
     return GoRouter(
-      initialLocation: '/${WellcomeScreen.route}',
+      initialLocation: '/${AppDemoScreen.route}',
       navigatorKey: rootNavigatorKey,
       routes: [
         AuthRoutes.routes,
-        GoRoute(
-            path: '/${WellcomeScreen.route}',
-            name: '/${WellcomeScreen.route}',
-            builder: (context, state) {
-              return const WellcomeScreen();
-            }),
       ],
       observers: [
         routeObserver,
@@ -39,5 +33,38 @@ class RouteConfig {
       // refreshListenable: authStateListenable,
       debugLogDiagnostics: true,
     );
+  }
+
+  static CustomTransitionPage buildPageWithDefaultTransition<T>({
+    required BuildContext context,
+    required GoRouterState state,
+    required Widget child,
+    String? type,
+  }) {
+    return CustomTransitionPage<T>(
+        key: state.pageKey,
+        child: child,
+        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          switch (type) {
+            case 'fade':
+              return FadeTransition(opacity: animation, child: child);
+            case 'rotation':
+              return RotationTransition(turns: animation, child: child);
+            case 'size':
+              return SizeTransition(sizeFactor: animation, child: child);
+            case 'scale':
+              return ScaleTransition(scale: animation, child: child);
+            default:
+              const begin = Offset(1.0, 0);
+              const end = Offset.zero;
+              const curve = Curves.ease;
+              var tween =
+                  Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+              return SlideTransition(
+                position: animation.drive(tween),
+                child: child,
+              );
+          }
+        });
   }
 }

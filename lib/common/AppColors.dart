@@ -22,4 +22,5 @@ class AppColors {
   static const borderSides = Color(0xFFF2F2F2);
   static const graySatellite = Color(0xFF565656);
   static const colorNotification = Color(0xFF24A14F);
+  static const appColors = Color(0xFFB12A1C);
 }
