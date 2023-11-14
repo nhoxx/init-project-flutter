@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pets_analytics/features/authentication/presentation/screens/app_demo_screen.dart';
+import 'package:pets_analytics/features/authentication/presentation/screens/pet_profile_screen.dart';
 import 'package:pets_analytics/features/authentication/routes/auth_routes.dart';
 
 class RouteConfig {

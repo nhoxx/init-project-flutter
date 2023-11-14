@@ -214,6 +214,9 @@ class AppStyles {
   static const primaryBoldS24 = TextStyle(
       color: AppColors.primary, fontSize: 24, fontFamily: AppFonts.visbyBold);
 
+//S26
+  static const darkSemiboldS26 = TextStyle(
+      color: AppColors.dark, fontSize: 26, fontFamily: AppFonts.visbySemiBold);
   //s32
   static const blackBoldS32 = TextStyle(
     color: Colors.black,

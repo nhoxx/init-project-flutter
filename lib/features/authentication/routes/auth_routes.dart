@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pets_analytics/features/authentication/presentation/screens/app_demo_screen.dart';
 import 'package:pets_analytics/features/authentication/presentation/screens/log_in_screen.dart';
+import 'package:pets_analytics/features/authentication/presentation/screens/pet_profile_screen.dart';
 import 'package:pets_analytics/features/authentication/presentation/screens/sign_up_screen.dart';
 import 'package:pets_analytics/features/authentication/presentation/screens/wellcome_screen.dart';
 import 'package:pets_analytics/routes/route_config.dart';
@@ -60,6 +61,17 @@ class AuthRoutes {
               ),
             )
           ],
+        ),
+        GoRoute(
+          path: PetProfileScreen.route,
+          name: PetProfileScreen.route,
+          builder: (context, state) => const PetProfileScreen(),
+          pageBuilder: (context, state) =>
+              RouteConfig.buildPageWithDefaultTransition<void>(
+            context: context,
+            state: state,
+            child: const PetProfileScreen(),
+          ),
         ),
       ]);
 }

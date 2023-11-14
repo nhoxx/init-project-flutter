@@ -37,5 +37,27 @@
   "signup__password_invalid": "Must be between 8 and 20 characters, contain both upper and lower case, at least 1 number and 1 special character",
 
   "sign_in__log_in":"Log In",
-  "sign_in__forgot_your_password":"Forgot your password?"
+  "sign_in__forgot_your_password":"Forgot your password?",
+
+  "pet_profile__pet_profile": "Pet Profile",
+  "pet_profile__skip": "Skip",
+  "pet_profile__fill_out": "Fill out a questionnaire for your pets",
+  "pet_profile__fill_out_description": "This give you a more personalized experience, tailored to your pets’ needs.",
+  "pet_profile__start": "Start",
+  "pet_profile__add_photo": "Add Photo",
+  "pet_profile__pet_name": "Pet Name",
+  "pet_profile__enter_here": "Enter here",
+  "pet_profile__pet_gender": "Pet Gender",
+  "pet_profile__pet_type": "Pet Type",
+  "pet_profile__breed": "Breed",
+  "pet_profile__please_select_a_breed": "Please Select A Breed",
+
+  "pet_profile__next": "Next",
+  "pet_profile__birth_date": "Birth Date",
+  "pet_profile__weight": "Weight (kg)",
+  "pet_profile__current_diet": "Current Diet",
+  "pet_profile__prre_existing_conditions": "Pre-existing Conditions",
+  "pet_profile__prre_enter_weight": "Enter weight",
+  "pet_profile__prre_selec_conditions": "Select Conditions"
+
 }

@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_remix/flutter_remix.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pets_analytics/common/AppColors.dart';
 import 'package:pets_analytics/common/AppDimens.dart';
 import 'package:pets_analytics/common/widget/pets_button.dart';
 import 'package:pets_analytics/common/widget/pets_textfield.dart';
+import 'package:pets_analytics/features/authentication/presentation/screens/pet_profile_screen.dart';
 import 'package:pets_analytics/utils/email_validator.dart';
 import 'package:pets_analytics/utils/password_validator.dart';
 import 'package:reactive_forms/reactive_forms.dart';
@@ -81,7 +83,9 @@ class SignInForm extends ConsumerWidget {
             padding: const EdgeInsets.only(top: 160, bottom: 16),
             child: PetsButton(
               title: l10n.sign_in__log_in,
-              onPressed: () {},
+              onPressed: () {
+                context.replaceNamed(PetProfileScreen.route);
+              },
             ),
           ),
         ],
